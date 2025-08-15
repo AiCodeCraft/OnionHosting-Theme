@@ -14,3 +14,5 @@ Feel free to use and modify this theme for your projects. It's a great starting 
 This theme is open source and available under the MIT License. Use it as you wish!
 
 Made with love and a bit of code magic. ✨ 
+
+AI used Crossover : Deepseek R1 + V3 & Gemini 2.5 Flash
