@@ -1,5 +1,7 @@
 # OnionHosting - Theme
 
+I was looking for a cool theme to build an admin panel for my journalism CMS, and things quickly got out of hand. After giving a trained AI some great markup to work with, a fantastic new theme was born. Now I have an extra one! Haha.
+
 This is a fun, old-school hacker-style HTML/CSS theme for a web hosting with user panel. It was created with the help of a trained AI, focusing on a minimal, secure, and terminal-like aesthetic.
 
 ## 🚀 Features
@@ -13,6 +15,6 @@ Feel free to use and modify this theme for your projects. It's a great starting 
 ## 📄 License
 This theme is open source and available under the MIT License. Use it as you wish!
 
-Made with love and a bit of code magic. ✨ 
+Made with love and a bit of code magic. ✨
 
-AI used Crossover : Deepseek R1 + V3 & Gemini 2.5 Flash
+> AI used Crossover : Deepseek R1 + V3 & Gemini 2.5 Flash (Text only)
