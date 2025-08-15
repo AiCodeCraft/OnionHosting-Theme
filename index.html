@@ -100,60 +100,54 @@
     </style>
 </head>
 <body class="min-h-screen">
-    <!-- Matrix background effect -->
     <canvas id="matrix" class="matrix-bg"></canvas>
     
-    <!-- Scanline effect -->
     <div class="scanline"></div>
     
-    <!-- Header -->
-    <header class="border-b border-green-500 border-opacity-50">
+    <header class="border-b border-green-500 border-opacity-50 sticky top-0 z-50 bg-black bg-opacity-70 backdrop-blur-sm">
         <div class="container mx-auto px-4 py-6">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
                     <i class="fas fa-server text-2xl text-green-500 glow-text"></i>
-                    <h1 class="text-2xl md:text-3xl font-bold hacker-font glow-text">Onion<span class="text-white">Host</span></h1>
+                    <a href="#hero" class="text-2xl md:text-3xl font-bold hacker-font glow-text">Onion<span class="text-white">Host</span></a>
                 </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="hover:text-green-400 transition duration-300">Home</a>
-                    <a href="#" class="hover:text-green-400 transition duration-300">Services</a>
-                    <a href="#" class="hover:text-green-400 transition duration-300">Pricing</a>
-                    <a href="#" class="hover:text-green-400 transition duration-300">About</a>
-                    <a href="#" class="hover:text-green-400 transition duration-300">Contact</a>
-                    <a href="#" class="hover:text-green-400 transition duration-300">Panel</a>
+                <nav class="hidden md:flex space-x-8" id="nav-menu">
+                    <a href="#hero" class="hover:text-green-400 transition duration-300">Home</a>
+                    <a href="#services" class="hover:text-green-400 transition duration-300">Services</a>
+                    <a href="#pricing" class="hover:text-green-400 transition duration-300">Pricing</a>
+                    <a href="#about" class="hover:text-green-400 transition duration-300">About</a>
+                    <a href="#contact" class="hover:text-green-400 transition duration-300">Contact</a>
+                    <a href="panel.html" class="hover:text-green-400 transition duration-300">Panel</a>
                 </nav>
-                <button class="md:hidden text-green-500">
+                <button class="md:hidden text-green-500" id="mobile-menu-button">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
     </header>
     
-    <!-- Hero Section -->
-    <section class="py-20 px-4">
+    <section id="hero" class="py-20 px-4">
         <div class="container mx-auto text-center">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl md:text-5xl font-bold mb-6 hacker-font glow-text typewriter">Secure Anonymous Hosting</h2>
                 <p class="text-lg md:text-xl mb-10 text-gray-300">Host your onion services with military-grade encryption and complete anonymity. No logs. No tracking. No compromises.</p>
                 <div class="flex flex-col md:flex-row justify-center gap-4">
-                    <button class="bg-green-600 hover:bg-green-700 text-black font-bold py-3 px-6 rounded glow-box transition duration-300">
+                    <a href="#pricing" class="bg-green-600 hover:bg-green-700 text-black font-bold py-3 px-6 rounded glow-box transition duration-300">
                         <i class="fas fa-lock mr-2"></i> Get Started
-                    </button>
-                    <button class="border border-green-500 hover:bg-green-900 hover:bg-opacity-30 text-green-500 font-bold py-3 px-6 rounded transition duration-300">
+                    </a>
+                    <a href="#services" class="border border-green-500 hover:bg-green-900 hover:bg-opacity-30 text-green-500 font-bold py-3 px-6 rounded transition duration-300">
                         <i class="fas fa-terminal mr-2"></i> Learn More
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Features Section -->
-    <section class="py-16 px-4">
+    <section id="services" class="py-16 px-4">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-center hacker-font glow-text">Our <span class="text-white">Features</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
                 <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-green-500 border-opacity-30 hover:glow-box transition duration-300">
                     <div class="text-green-500 text-4xl mb-4">
                         <i class="fas fa-user-secret"></i>
@@ -162,7 +156,6 @@
                     <p class="text-gray-300">We don't ask for personal information. All payments accepted in Monero and Bitcoin.</p>
                 </div>
                 
-                <!-- Feature 2 -->
                 <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-green-500 border-opacity-30 hover:glow-box transition duration-300">
                     <div class="text-green-500 text-4xl mb-4">
                         <i class="fas fa-shield-alt"></i>
@@ -171,7 +164,6 @@
                     <p class="text-gray-300">End-to-end encryption with AES-256 and perfect forward secrecy for all communications.</p>
                 </div>
                 
-                <!-- Feature 3 -->
                 <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-green-500 border-opacity-30 hover:glow-box transition duration-300">
                     <div class="text-green-500 text-4xl mb-4">
                         <i class="fas fa-network-wired"></i>
@@ -183,13 +175,11 @@
         </div>
     </section>
     
-    <!-- Pricing Section -->
-    <section class="py-16 px-4 bg-black bg-opacity-30">
+    <section id="pricing" class="py-16 px-4 bg-black bg-opacity-30">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-center hacker-font glow-text">Hosting <span class="text-white">Plans</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Plan 1 -->
                 <div class="bg-black bg-opacity-70 p-6 rounded-lg border border-green-500 border-opacity-30 hover:glow-box transition duration-300">
                     <h3 class="text-xl font-bold mb-4 text-center">Stealth</h3>
                     <div class="text-green-500 text-4xl font-bold mb-4 text-center">0.005 XMR<span class="text-sm text-gray-400">/month</span></div>
@@ -215,12 +205,11 @@
                             <span>DDoS Protection</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded transition duration-300">
+                    <a href="#" class="w-full bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded transition duration-300 block text-center">
                         Select Plan
-                    </button>
+                    </a>
                 </div>
                 
-                <!-- Plan 2 -->
                 <div class="bg-black bg-opacity-70 p-6 rounded-lg border border-green-500 border-opacity-50 glow-box transform scale-105 z-10">
                     <div class="absolute top-0 right-0 bg-green-600 text-black text-xs font-bold px-2 py-1 rounded-bl">POPULAR</div>
                     <h3 class="text-xl font-bold mb-4 text-center">Ghost</h3>
@@ -247,12 +236,11 @@
                             <span>Basic DDoS Protection</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded transition duration-300">
+                    <a href="#" class="w-full bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded transition duration-300 block text-center">
                         Select Plan
-                    </button>
+                    </a>
                 </div>
                 
-                <!-- Plan 3 -->
                 <div class="bg-black bg-opacity-70 p-6 rounded-lg border border-green-500 border-opacity-30 hover:glow-box transition duration-300">
                     <h3 class="text-xl font-bold mb-4 text-center">Phantom</h3>
                     <div class="text-green-500 text-4xl font-bold mb-4 text-center">0.02 XMR<span class="text-sm text-gray-400">/month</span></div>
@@ -278,16 +266,15 @@
                             <span>Advanced DDoS Protection</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded transition duration-300">
+                    <a href="#" class="w-full bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded transition duration-300 block text-center">
                         Select Plan
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Terminal Demo -->
-    <section class="py-16 px-4">
+    <section id="about" class="py-16 px-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-12 text-center hacker-font glow-text">Server <span class="text-white">Status</span></h2>
             
@@ -320,13 +307,11 @@
         </div>
     </section>
     
-    <!-- FAQ Section -->
     <section class="py-16 px-4 bg-black bg-opacity-30">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-12 text-center hacker-font glow-text">Frequently <span class="text-white">Asked Questions</span></h2>
             
             <div class="space-y-4">
-                <!-- FAQ Item 1 -->
                 <div class="border-b border-green-500 border-opacity-30 pb-4">
                     <button class="flex justify-between items-center w-full text-left">
                         <h3 class="text-lg font-bold">Is my data really anonymous?</h3>
@@ -337,7 +322,6 @@
                     </div>
                 </div>
                 
-                <!-- FAQ Item 2 -->
                 <div class="border-b border-green-500 border-opacity-30 pb-4">
                     <button class="flex justify-between items-center w-full text-left">
                         <h3 class="text-lg font-bold">What payment methods do you accept?</h3>
@@ -348,7 +332,6 @@
                     </div>
                 </div>
                 
-                <!-- FAQ Item 3 -->
                 <div class="border-b border-green-500 border-opacity-30 pb-4">
                     <button class="flex justify-between items-center w-full text-left">
                         <h3 class="text-lg font-bold">Do you offer technical support?</h3>
@@ -359,7 +342,6 @@
                     </div>
                 </div>
                 
-                <!-- FAQ Item 4 -->
                 <div class="border-b border-green-500 border-opacity-30 pb-4">
                     <button class="flex justify-between items-center w-full text-left">
                         <h3 class="text-lg font-bold">What happens if my service gets DDoSed?</h3>
@@ -373,8 +355,7 @@
         </div>
     </section>
     
-    <!-- Contact Section -->
-    <section class="py-16 px-4">
+    <section id="contact" class="py-16 px-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-12 text-center hacker-font glow-text">Contact <span class="text-white">Us</span></h2>
             
@@ -422,7 +403,6 @@
         </div>
     </section>
     
-    <!-- Footer -->
     <footer class="bg-black bg-opacity-70 py-8 px-4 border-t border-green-500 border-opacity-30">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -455,7 +435,6 @@
         </div>
     </footer>
     
-    <!-- Matrix animation script -->
     <script>
         // Matrix background effect
         const canvas = document.getElementById('matrix');
@@ -517,33 +496,37 @@
         
         // Terminal input focus effect
         const terminalInput = document.querySelector('.terminal-input');
-        terminalInput.addEventListener('focus', () => {
-            terminalInput.parentElement.classList.add('glow-text');
-        });
-        
-        terminalInput.addEventListener('blur', () => {
-            terminalInput.parentElement.classList.remove('glow-text');
-        });
+        if (terminalInput) { // Sicherstellen, dass das Element existiert
+            terminalInput.addEventListener('focus', () => {
+                terminalInput.parentElement.classList.add('glow-text');
+            });
+            
+            terminalInput.addEventListener('blur', () => {
+                terminalInput.parentElement.classList.remove('glow-text');
+            });
+        }
         
         // Responsive menu toggle
         const menuButton = document.querySelector('button.md\\:hidden');
-        const navMenu = document.querySelector('nav.hidden.md\\:flex');
+        const navMenu = document.querySelector('#nav-menu');
         
-        menuButton.addEventListener('click', () => {
-            navMenu.classList.toggle('hidden');
-            navMenu.classList.toggle('absolute');
-            navMenu.classList.toggle('top-16');
-            navMenu.classList.toggle('right-4');
-            navMenu.classList.toggle('bg-black');
-            navMenu.classList.toggle('bg-opacity-90');
-            navMenu.classList.toggle('p-4');
-            navMenu.classList.toggle('rounded');
-            navMenu.classList.toggle('border');
-            navMenu.classList.toggle('border-green-500');
-            navMenu.classList.toggle('flex-col');
-            navMenu.classList.toggle('space-y-4');
-            navMenu.classList.toggle('space-x-0');
-        });
+        if (menuButton && navMenu) { // Sicherstellen, dass die Elemente existieren
+            menuButton.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-16');
+                navMenu.classList.toggle('right-4');
+                navMenu.classList.toggle('bg-black');
+                navMenu.classList.toggle('bg-opacity-90');
+                navMenu.classList.toggle('p-4');
+                navMenu.classList.toggle('rounded');
+                navMenu.classList.toggle('border');
+                navMenu.classList.toggle('border-green-500');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('space-y-4');
+                navMenu.classList.toggle('space-x-0');
+            });
+        }
     </script>
 </body>
 </html>
