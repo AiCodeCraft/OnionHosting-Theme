@@ -18,3 +18,4 @@ This theme is open source and available under the MIT License. Use it as you wis
 Made with love and a bit of code magic. ✨
 
 > AI used Crossover : Deepseek R1 + V3 & Gemini 2.5 Flash (Text only)
+> by Volkan Sah
