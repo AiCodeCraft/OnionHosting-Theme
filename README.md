@@ -1,6 +1,6 @@
 # OnionHosting - Theme
 
-I was looking for a cool theme to build an admin panel for my journalism CMS, and things quickly got out of hand. After giving a trained AI some great markup to work with, a fantastic new theme was born. Now I have an extra one! Haha.
+I was looking for a cool theme to build an admin panel for my  CMS, and things quickly got out of hand. After giving a trained AI some great markup to work with, a fantastic new theme was born. Now I have an extra one! Haha.
 
 This is a fun, old-school hacker-style HTML/CSS theme for a web hosting with user panel. It was created with the help of a trained AI, focusing on a minimal, secure, and terminal-like aesthetic.
 
