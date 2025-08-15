@@ -1,4 +1,4 @@
-# OnionHosting - Themed User Panel
+# OnionHosting - Theme
 
 This is a fun, old-school hacker-style HTML/CSS theme for a web hosting with user panel. It was created with the help of a trained AI, focusing on a minimal, secure, and terminal-like aesthetic.
 
