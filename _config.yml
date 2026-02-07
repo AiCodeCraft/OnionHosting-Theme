@@ -1,0 +1,35 @@
+# Wall of Shames - Jekyll Configuration
+title: "Wall of Shames"
+description: "Read the fucking manual - or end up here"
+baseurl: ""
+url: "https://wall-of-shames.github.io"
+
+# Author
+author:
+  name: "Wall of Shames Collective"
+  email: "rtfm@wallofshames.dev"
+
+# Build settings
+markdown: kramdown
+theme: minima
+permalink: /:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
