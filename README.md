@@ -1,4 +1,5 @@
-# OnionHosting - Theme
+# OnionHosting - Theme 
+## Test withClaude. Fail! no version 2 me! Hello ScriptKiddi look! 
 
 I was looking for a cool theme to build an admin panel for my  CMS, and things quickly got out of hand. After giving a trained AI some great markup to work with, a fantastic new theme was born. Now I have an extra one! Haha.
 
